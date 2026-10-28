@@ -107,3 +107,23 @@ footer { padding: 28px 32px; border-top: 1px solid var(--line); font-size: .85re
 .timeline .desc ul { list-style: none; margin-top: 6px; }
 .timeline .desc li { position: relative; padding-left: 18px; margin-bottom: 6px; }
 .timeline .desc li::before { content: ""; position: absolute; left: 0; top: .6em; width: 8px; height: 8px; background: var(--accent); }
+
+/* Cards clicáveis */
+a.card { display: flex; flex-direction: column; }
+a.card p { flex: 1; }
+.card .more { margin-top: 20px; font-size: .85rem; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; }
+
+/* Página de case */
+.case-hero { padding: 96px 0 56px; border-bottom: 1px solid var(--line); }
+.case-hero h1 { font-size: clamp(2.75rem, 8vw, 6.5rem); margin: 16px 0 24px; }
+.case-meta { display: grid; grid-template-columns: repeat(4, 1fr); margin-top: 48px; border-top: 1px solid var(--line); }
+.case-meta div { padding: 16px 16px 0 0; }
+.case-meta dt { font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; margin-bottom: 6px; }
+.case-meta dd { font-size: 1rem; color: var(--muted); }
+.next-case { display: block; padding: 28px; border: 1px solid var(--line); margin-bottom: 32px; transition: background .2s; }
+.next-case:hover { background: var(--accent); color: var(--on-accent); }
+.next-case:hover .kicker { color: var(--on-accent); }
+.next-title { display: block; font-size: clamp(1.4rem, 3vw, 2.2rem); font-weight: 900; letter-spacing: -.03em; line-height: 1.1; }
+.case-end { border-bottom: none; }
+@media (max-width: 860px) { .case-meta { grid-template-columns: 1fr 1fr; } }
+.case-page section { padding: 64px 0; }
