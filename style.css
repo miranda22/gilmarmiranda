@@ -188,3 +188,4 @@ a.card p { flex: 1; }
 .specs dd { color: var(--muted); }
 .shot.phone { max-width: 340px; }
 @media (max-width: 860px) { .case-hero .metrics { grid-template-columns: 1fr 1fr; } }
+.card.featured.alt + .card.featured.alt { border-top: 1px solid var(--line); }
