@@ -159,3 +159,11 @@ a.card p { flex: 1; }
 .prose .cta { margin-top: 24px; }
 @media (max-width: 860px) { .metrics { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 480px) { .metrics { grid-template-columns: 1fr; } .tldr { padding: 22px; } }
+
+/* Imagens nos cases */
+.shot { margin: 28px 0; }
+.shot a { display: block; border: 1px solid var(--line); overflow: hidden; }
+.shot img { display: block; width: 100%; height: auto; transition: transform .3s; }
+.shot a:hover img { transform: scale(1.02); }
+.shot figcaption { margin-top: 10px; font-size: .9rem; color: var(--muted); max-width: 68ch; }
+.shot figcaption span { font-weight: 700; color: var(--text); white-space: nowrap; }
