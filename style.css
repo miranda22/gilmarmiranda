@@ -167,3 +167,24 @@ a.card p { flex: 1; }
 .shot a:hover img { transform: scale(1.02); }
 .shot figcaption { margin-top: 10px; font-size: .9rem; color: var(--muted); max-width: 68ch; }
 .shot figcaption span { font-weight: 700; color: var(--text); white-space: nowrap; }
+
+/* Segundo case em destaque (variação clara) */
+.card.featured.alt { background: var(--bg); color: var(--text); }
+.card.featured.alt .kicker, .card.featured.alt p { color: var(--muted); opacity: 1; }
+.card.featured.alt .more { color: var(--text); box-shadow: inset 0 -6px 0 var(--accent); align-self: flex-start; }
+.card.featured.alt:hover { background: var(--accent); color: var(--on-accent); }
+.card.featured.alt:hover .more { box-shadow: none; }
+
+/* Listas e fichas técnicas nos cases */
+.case-hero .metrics { grid-template-columns: repeat(4, 1fr); margin-top: 40px; }
+.prose .sub { font-weight: 700; color: var(--text); margin-top: 24px; }
+.prose .sub:first-of-type { margin-top: 0; }
+.prose ul.bullets { list-style: none; margin-top: 10px; }
+.prose ul.bullets li { position: relative; padding-left: 20px; margin-bottom: 10px; max-width: 68ch; font-size: 1.05rem; }
+.prose ul.bullets li::before { content: ""; position: absolute; left: 0; top: .6em; width: 8px; height: 8px; background: var(--accent); }
+.specs { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); border-top: 1px solid var(--line); margin-bottom: 8px; }
+.specs div { padding: 14px 16px 14px 0; border-bottom: 1px solid var(--soft); }
+.specs dt { font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; margin-bottom: 4px; }
+.specs dd { color: var(--muted); }
+.shot.phone { max-width: 340px; }
+@media (max-width: 860px) { .case-hero .metrics { grid-template-columns: 1fr 1fr; } }
