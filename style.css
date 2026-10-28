@@ -189,3 +189,7 @@ a.card p { flex: 1; }
 .shot.phone { max-width: 340px; }
 @media (max-width: 860px) { .case-hero .metrics { grid-template-columns: 1fr 1fr; } }
 .card.featured.alt + .card.featured.alt { border-top: 1px solid var(--line); }
+.card.card-cta { background: var(--accent); color: var(--on-accent); }
+.card.card-cta .kicker, .card.card-cta p { color: var(--on-accent); }
+.card.card-cta:hover { background: var(--text); color: var(--bg); }
+.card.card-cta:hover .kicker, .card.card-cta:hover p { color: var(--bg); }
