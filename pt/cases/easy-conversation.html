@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Easy Conversation | Gilmar Miranda</title>
+  <meta name="description" content="Easy Conversation: o susto financeiro que virou produto. Uma ferramenta proprietária de pesquisa com IA via WhatsApp que levou a taxa de resposta de 10% para ~70%.">
+  <link rel="alternate" hreflang="en" href="https://miranda22.github.io/gilmarmiranda/cases/easy-conversation.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://miranda22.github.io/gilmarmiranda/pt/cases/easy-conversation.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../style.css">
+</head>
+<body class="case-page">
+  <header class="nav">
+    <a href="../" class="logo">GM</a>
+    <nav>
+      <a href="../#cases">← Todos os cases</a>
+      <a href="../../cases/easy-conversation.html" class="lang" title="View in English">EN</a>
+    </nav>
+  </header>
+
+  <main>
+    <header class="case-hero">
+      <p class="eyebrow">Ipsos · Ferramenta proprietária de pesquisa com IA</p>
+      <h1>Easy Conversation<span class="dot">.</span></h1>
+      <p class="lead">O susto financeiro que virou produto. Design, P&amp;L e WhatsApp.</p>
+      <p class="byline">Por <a href="https://www.linkedin.com/in/gilmarmirandac/" target="_blank" rel="noopener">Gilmar Miranda</a> · Director UX Research &amp; Design · 3 de setembro de 2026</p>
+      <dl class="case-meta">
+        <div><dt>Empresa</dt><dd>Ipsos</dd></div>
+        <div><dt>Cargo</dt><dd>Director UX Research &amp; Design</dd></div>
+        <div><dt>Período</dt><dd>2026</dd></div>
+        <div><dt>Primeiro cliente</dt><dd>Meta U.S. (WhatsApp)</dd></div>
+      </dl>
+    </header>
+
+    <section>
+      <h3>TL;DR</h3>
+      <div class="tldr">
+        <ul>
+          <li>Utilizávamos uma ferramenta SaaS de pesquisa muito cara, com taxa de resposta de apenas 10% devido à dificuldade de acesso para os usuários em nossos projetos.</li>
+          <li>Criamos o Easy Conversation, uma plataforma própria que usa o WhatsApp para captar feedbacks sem fricção, integrada com IA para transcrição automática.</li>
+          <li>Protótipo validado em apenas 1 dia no Figma Make.</li>
+          <li>O estudo financeiro provou que desenvolver a ferramenta internamente era mais barato do que pagar a licença do SaaS por mais um ano.</li>
+          <li>Lançamento rápido (2 meses), salto para ~70% na taxa de resposta, dados muito mais ricos (áudios e vídeos) e aumento expressivo na margem de lucro da área. O primeiro grande cliente? A Meta U.S.</li>
+        </ul>
+      </div>
+      <div class="metrics">
+        <div class="metric"><strong>10% → 70%</strong><span>taxa de resposta no piloto</span></div>
+        <div class="metric"><strong>6h → 15min</strong><span>tempo médio de resposta</span></div>
+        <div class="metric"><strong>5x</strong><span>mais mensagens de voz</span></div>
+        <div class="metric"><strong>1 dia</strong><span>do papel ao protótipo navegável</span></div>
+        <div class="metric"><strong>2 meses</strong><span>da ideia ao lançamento</span></div>
+        <div class="metric"><strong>68%</strong><span>de taxa de resposta no primeiro projeto, para a Meta U.S.</span></div>
+      </div>
+    </section>
+
+    <section class="prose">
+      <h3>Contexto</h3>
+      <p class="aside">Antes de contar o case, resolvi escrever sozinho este texto, sem IA. Não sou contra IA, pelo contrário, uso demais, mas resolvi matar a saudade de 3 anos atrás, quando escrevíamos tudo na cara e na coragem, rs 😁</p>
+      <p>Março de 2026, após uma reunião financeira com o time da Ipsos, um dos custos chamou a atenção da pessoa responsável pela parte financeira. Tratava-se de uma boa dezena de milhares de reais em custos com uma ferramenta SaaS de pesquisa. Como líder da área, eu tinha que prestar contas de P&amp;L e garantir que a área ficasse profitable e com margens alinhadas ao business; caso contrário, teria problemas, rs.</p>
+    </section>
+
+    <section class="prose">
+      <h3>O desafio</h3>
+      <p>Essa reunião me deixou por dias com essa quantia gasta com a ferramenta na cabeça. Então comecei uma onda de conversas com o time para entender a entrega da ferramenta, efetividade, facilidade de uso e, claro, se a ferramenta cumpria seu papel; enfim, se o retorno sobre o investimento fazia sentido.</p>
+      <p><strong>BOOM!</strong> Nas primeiras conversas com o time, descobri algumas coisas. Por se tratar de uma ferramenta de pesquisa cujo intuito primário era captar feedbacks das pessoas usuárias que participavam de um estudo, fui informado de que:</p>
+      <ol>
+        <li>A taxa de resposta das pessoas era de cerca de 10%, ou seja, apenas 1 a cada 10 respondia às nossas pesquisas. O principal motivo era a burocracia e a dificuldade em acessar a ferramenta, que pedia login e vários passos para responder a perguntas simples. Só aqui, meu time despendia o triplo do tempo planejado para conseguir a quantidade de respostas necessária ao projeto acordado.</li>
+        <li>O tempo para a segunda interação era ainda pior. Em casos de diário de estudo, após o segundo dia, a quantidade de pessoas perdidas era terrivelmente maior: perdíamos cerca de 50% das pessoas. Isso gerava mais trabalho para o time de recrutamento. Ah, e todo estudo era pago com excelentes incentivos em dinheiro.</li>
+        <li>Os respondentes relatavam quase sempre ao time de recrutamento que tinham receio de dar muitos detalhes sobre o que era perguntado nas pesquisas, o que tornava os feedbacks de baixíssima profundidade de insights e achados. A razão era nunca terem ouvido falar da ferramenta.</li>
+        <li>Para fazer com que as pessoas respondessem mais rapidamente, o time de recrutamento e os moderadores enviavam uma mensagem a cada participante pelo WhatsApp pedindo que entrassem na ferramenta e respondessem. Os participantes então perguntavam ali mesmo quais eram as perguntas e respondiam com áudio, vídeo, prints e o que fosse preciso, com uma riqueza de detalhes impecável. O time em seguida transcrevia tudo para texto e fazia upload na plataforma.</li>
+      </ol>
+      <p class="highlight">Foi exatamente aqui, nesse 4º ponto, que, enquanto eu corria em um dos treinos longos de corrida, comecei a pensar se o caminho não deveria ser exatamente aquele: usar o WhatsApp como meio de captura de feedbacks, e não somente como ferramenta de recrutamento.</p>
+    </section>
+
+    <section class="prose">
+      <h3>Um piloto antes de sair fazendo</h3>
+      <p>A ideia era, então, usar o WhatsApp como ferramenta. Antes de pensar em qualquer protótipo ou coisa do gênero, decidimos rodar um projeto usando <strong>WhatsApp Business + transcrição das conversas com Gemini Pro corporativo + Google Slides + Google Sheets</strong>. O resultado foi impressionante:</p>
+      <ol>
+        <li><strong>Taxa de resposta de 70%</strong>, ou seja, 7 em cada 10 pessoas nos responderam.</li>
+        <li><strong>Tempo de resposta médio de 15 minutos.</strong> Na ferramenta eram 6 horas.</li>
+        <li><strong>Qualidade das respostas:</strong> cinco vezes mais mensagens de voz do que pela plataforma antiga, e mais vídeos. Afinal, nós, brazucas, amamos uma mensagenzinha de áudio, né?</li>
+      </ol>
+      <p>Sucesso? Em partes, pois o time ainda gastava muito tempo tendo que pegar as respostas do WhatsApp Business, trazê-las para outro documento, controlar respostas etc.</p>
+    </section>
+
+    <section class="prose">
+      <h3>Algo mais seguro e concreto apareceu</h3>
+      <p>Foi aqui que precisamos ir além e, de fato, pensar em um segundo step de validação.</p>
+      <p>Com tanto aprendizado até esse ponto, resolvemos meter a mão na massa. Usamos o velho design studio: começamos no papel, caneta e lousa, com votação e interface ao final da reunião, mas com um desafio: teríamos que sair dali com um protótipo navegável (estamos na era da IA, né, com tantas ferramentas). Como já usávamos muito o Figma, caso a ideia desse certo, seria mais fácil fazer qualquer handover para o time de dev e para o próprio time de design.</p>
+      <p>Nasceram diversas ideias, mas, montando o quebra-cabeça com as melhores partes, chegamos ao core:</p>
+      <p class="formula">Base de usuários para utilização + ferramenta hub que recebe e armazena todas as respostas por projeto vindas das conversas no WhatsApp Business + transcrição automatizada das conversas (chegou áudio, já vira texto) + diversos agentes humanos moderadores conversando com dezenas de pessoas usuárias + pré-análise instantânea feita por IA dentro de cada projeto na plataforma.</p>
+      <p>Começamos às 9h da manhã e, às 16h, tínhamos um protótipo navegável feito no Figma Make, pronto para testar e com parte do design system da Ipsos aplicado para ganhar agilidade. Claro que iríamos precisar refinar specs, fontes etc., mas ficamos super próximos da realidade.</p>
+      <p>Nada sem teste pode funcionar bem, né? Então decidimos testar com 6 pessoas freelancers de recrutamento e moderação. Nenhuma delas participou do design studio, mas elas nos contaram as dores de campo. Falhamos em muitos fluxos e, assim que finalizamos os testes, no mesmo dia, nós, designers, modificamos direto no Figma Make o que fosse necessário.</p>
+      <p>Como alguém ainda incrédulo, resolvi testar de novo com mais 6 pessoas diferentes para ver se agora fazia sentido, e <strong>BOOM</strong>, funcionou, com pouquíssimos ajustes.</p>
+      <p>Dois dias depois de ter tudo finalizado no Figma Make, precisávamos chamar quem ia fazer o trabalho pesado: nossos amigos devs. Foram longas horas de sabatina, termos técnicos, debates sobre o que era possível, conexão com a API do Meta Business, custo de cada mensagem, horas alocadas do time de dev, prazo, custo etc.</p>
+      <p>Deixei o designer que me cabe de lado, vesti minha camiseta financeira e comecei a desenhar o P&amp;L daquela ideia. Sim, deixei para desenhar aqui e não antes: precisava do aval técnico para entender todos os custos. Foi então que, ao finalizar e validar com o time financeiro da empresa, meu sorriso foi de ponta a ponta.</p>
+      <p class="highlight">O custo para desenvolver e manter era absurdamente mais baixo do que eu tinha gasto com as ferramentas terceiras até ali. Para ter uma ideia, com todo o dinheiro gasto até então, eu conseguia pagar o desenvolvimento e manter a ferramenta de pé por mais 1 ano, isso sem fazer nenhuma venda de projeto através dela.</p>
+      <p>Depois do dev e do P&amp;L, chegou a hora de pedir a bênção aos responsáveis pela grana. Aqui eu já estava prestes a desistir, pois falar de investimento é sempre um assunto sensível. Houve questionamentos e dúvidas, mas deu certo.</p>
+      <p>Alocamos o time de dev, designers e PMs para botar de pé o que hoje chamamos de Easy Conversation. Neste, assim como em outros projetos, literalmente meti a mão na massa: desenhei, apaguei, desenhei de novo, critiquei, e assim por diante. Aterrissamos o Figma Make no Figma e seguimos todo o processo de design, trazendo as telas, fluxos comentados etc.</p>
+      <p>Foram reuniões semanais e assíncronas durante todo o desenvolvimento. Além de idealizar e botar a mão na massa em todas as fases, também liderei e acompanhei o desenvolvimento da ferramenta, que foi excelentemente desenvolvida pelo time de dev da Ipsos. Foram diversos testes até chegarmos a um MVP que pudesse receber um piloto.</p>
+    </section>
+
+    <section class="prose">
+      <h3>Solução em produção e realidade nua e crua</h3>
+      <p>Fizemos 1 piloto, capturamos muitos erros e o time de dev corrigiu. Mais 2 projetos e mais erros, até entendermos que sim, podíamos seguir.</p>
+      <p>Com tudo pronto, 2 meses depois da concepção da ideia, comecei o trabalho comercial de vender a solução aos clientes. Nosso primeiro projeto foi um diário de estudo para a <strong>Meta USA</strong>, em um projeto para o WhatsApp. Olha que coincidência, rs.</p>
+      <p class="highlight">Foi um sucesso: taxa de resposta de 68%, a maioria das mensagens em voz e vídeo, profundidade das respostas sensacional e reports feitos muito mais rápido.</p>
+      <p>Ainda estamos em processo de melhorias constantes e adaptação geral. Abaixo está o link do protótipo que fizemos no Figma Make, do papel direto para o protótipo funcional.</p>
+      <div class="cta">
+        <a class="btn" href="https://www.figma.com/make/LXXBcSHZAPcF5uVqOYjgJF/Ferramenta-de-Cria%C3%A7%C3%A3o-de-Pesquisa?fullscreen=1&amp;code-node-id=0-9" target="_blank" rel="noopener">Ver protótipo no Figma Make ↗</a>
+      </div>
+    </section>
+
+    <section class="case-end">
+      <h3>Próximo case</h3>
+      <a class="next-case" href="ai-0-to-1.html">
+        <span class="kicker">Google · Meta</span>
+        <span class="next-title">Produtos 0-to-1 com IA →</span>
+      </a>
+      <p>Quer saber mais sobre este projeto? Posso apresentar este case em mais detalhes em uma conversa.</p>
+      <div class="cta">
+        <a class="btn" href="../#contato">Fale comigo</a>
+        <a class="btn ghost" href="../../cv-gilmar-miranda.pdf" download>Baixar CV</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>© <span id="ano"></span> Gilmar Miranda</footer>
+  <script>document.getElementById('ano').textContent = new Date().getFullYear();</script>
+</body>
+</html>

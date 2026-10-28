@@ -127,3 +127,35 @@ a.card p { flex: 1; }
 .case-end { border-bottom: none; }
 @media (max-width: 860px) { .case-meta { grid-template-columns: 1fr 1fr; } }
 .case-page section { padding: 64px 0; }
+
+/* Case em destaque na home */
+.card.featured { grid-column: 1 / -1; background: var(--text); color: var(--bg); }
+.card.featured .kicker, .card.featured p { color: var(--bg); opacity: .85; }
+.card.featured h4 { font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 900; letter-spacing: -.04em; }
+.card.featured p { max-width: 60ch; font-size: 1.1rem; }
+.card.featured .more { color: var(--accent); }
+.card.featured:hover { background: var(--accent); color: var(--on-accent); }
+.card.featured:hover .more, .card.featured:hover p, .card.featured:hover .kicker { color: var(--on-accent); opacity: 1; }
+
+/* Case em formato de artigo */
+.byline { margin-top: 20px; font-size: .9rem; color: var(--muted); }
+.byline a { font-weight: 700; color: var(--text); box-shadow: inset 0 -5px 0 var(--accent); }
+.tldr { background: var(--accent); color: var(--on-accent); padding: 28px 32px; }
+.tldr ul { list-style: none; }
+.tldr li { position: relative; padding-left: 22px; margin-bottom: 10px; font-size: 1.05rem; max-width: 72ch; }
+.tldr li:last-child { margin-bottom: 0; }
+.tldr li::before { content: "→"; position: absolute; left: 0; font-weight: 700; }
+.metrics { display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 32px; border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
+.metric { padding: 24px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.metric strong { display: block; font-size: clamp(1.75rem, 4vw, 2.75rem); font-weight: 900; letter-spacing: -.04em; line-height: 1.05; margin-bottom: 8px; }
+.metric span { font-size: .95rem; color: var(--muted); }
+.prose ol { list-style: none; counter-reset: item; margin-top: 20px; }
+.prose ol > li { counter-increment: item; position: relative; padding-left: 44px; margin-bottom: 16px; max-width: 68ch; font-size: 1.05rem; }
+.prose ol > li::before { content: counter(item); position: absolute; left: 0; top: 1px; width: 28px; height: 28px; display: grid; place-items: center; font-weight: 900; font-size: .9rem; background: var(--accent); color: var(--on-accent); }
+.prose ol + p { margin-top: 18px; }
+.prose .aside { font-style: italic; color: var(--muted); }
+.prose .highlight { font-size: 1.3rem; font-weight: 700; line-height: 1.4; letter-spacing: -.01em; border-left: 6px solid var(--accent); padding-left: 20px; margin: 28px 0; }
+.prose .formula { font-weight: 500; border: 1px solid var(--line); padding: 20px 24px; margin: 20px 0; max-width: 68ch; }
+.prose .cta { margin-top: 24px; }
+@media (max-width: 860px) { .metrics { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 480px) { .metrics { grid-template-columns: 1fr; } .tldr { padding: 22px; } }
