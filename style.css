@@ -193,3 +193,4 @@ a.card p { flex: 1; }
 .card.card-cta .kicker, .card.card-cta p { color: var(--on-accent); }
 .card.card-cta:hover { background: var(--text); color: var(--bg); }
 .card.card-cta:hover .kicker, .card.card-cta:hover p { color: var(--bg); }
+.card.card-cta.wide { grid-column: 1 / -1; }
