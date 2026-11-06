@@ -37,12 +37,12 @@
     <section>
       <h3>TL;DR</h3>
       <div class="tldr">
-        <ul>
-          <li>Utilizávamos uma ferramenta SaaS de pesquisa muito cara, com taxa de resposta de apenas 10% devido à dificuldade de acesso para os usuários em nossos projetos.</li>
-          <li>Criamos o Easy Conversation, uma plataforma própria que usa o WhatsApp para captar feedbacks sem fricção, integrada com IA para transcrição automática.</li>
-          <li>Protótipo validado em apenas 1 dia no Figma Make.</li>
-          <li>O estudo financeiro provou que desenvolver a ferramenta internamente era mais barato do que pagar a licença do SaaS por mais um ano.</li>
-          <li>Lançamento rápido (2 meses), salto para ~70% na taxa de resposta, dados muito mais ricos (áudios e vídeos) e aumento expressivo na margem de lucro da área. O primeiro grande cliente? A Meta U.S.</li>
+        <ul class="tldr-steps">
+          <li><strong>Contexto</strong>Pagávamos uma licença caríssima de uma ferramenta SaaS que entregava míseros 10% de taxa de resposta, porque o login burocrático afastava os participantes, estourando o tempo do time operacional e pressionando a margem do meu P&amp;L.</li>
+          <li><strong>Decisão</strong>Minha hipótese foi que levar a coleta de dados diretamente para o WhatsApp, com transcrição automática por IA, eliminaria a fricção de ponta a ponta. Validei um protótipo em apenas um dia no Figma Make e rodei um piloto ágil provando que a resposta subiria para cerca de 70%.</li>
+          <li><strong>Objeção</strong>O time financeiro travou pelo medo de trocar um SaaS de custo fixo previsível por custos variáveis de API e desenvolvimento interno; a Engenharia temia a estabilidade da API da Meta e o custo descontrolado de tokens de IA; e a Operação receava que a IA perdesse o contexto das respostas qualitativas.</li>
+          <li><strong>Ajuste</strong>Apresentei um DRE com cenários mostrando matematicamente que o custo total de construir e manter a ferramenta era muito inferior à renovação da licença; cortei o escopo da V1 com a Engenharia para o fluxo essencial com fila assíncrona; e desenhei o fluxo em Human-in-the-Loop, mantendo o áudio original ao lado do texto para revisão rápida dos moderadores.</li>
+          <li><strong>Resultado</strong>Lançamos o produto em 2 meses, reduzimos o tempo médio de resposta de 6 horas para 15 minutos, aumentamos a margem de lucro da operação e estreamos entregando 68% de taxa de resposta para o nosso maior cliente global, a Meta nos Estados Unidos.</li>
         </ul>
       </div>
       <div class="metrics">
